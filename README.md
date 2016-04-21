@@ -3,7 +3,9 @@
 
 This API creates a standardized JSON REST API, running on a NodeJS server, to integrate with a hypothetical OEM API. 
 
-## Running the server
+The application can be found running at [Heroku](http://smartcar-api.herokuapp.com/), and a Postman collection for hitting the application can be found [here](https://www.getpostman.com/collections/6c57523633a3e9c40309)
+
+## Running the server locally
 
 To run the server
 
@@ -21,6 +23,3 @@ To run the tests execute `npm test`.
 Test coverage can be calculated using Istanbul with: `npm run-script coverage`
 
 Test coverage information is generated and sent off to Coveralls on each push. This can be done locally by setting COVERALL_REPO_TOKEN environment variable and running `npm run-script coveralls`
-
-## Manually Hitting the API
-A Postman collection has been created for hitting localhost APIs for quick checks of work. Find the collection [here](https://www.getpostman.com/collections/4902a929412c7bebfa7e)
