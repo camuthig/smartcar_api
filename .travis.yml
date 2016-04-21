@@ -1,6 +1,11 @@
 language: node_js
 node_js:
-  - "node"
-  - "iojs"
+- node
+- iojs
+deploy:
+  provider: heroku
+  app: smartcar-api
+  api_key:
+    secure: Yt7D9zMzvAmRqusuPG1ZJruD32M/QLEac6t+8PZaz3bMmmOHoJm6u86fnyI9424e8ZBd9LOBb0owxcMxxJaovCHjRUUv6api4szwMnZn0igtRchqTT1p5XfE38uDEO2n72FIWYc2yZuxwBAyJaZ47PfqlJHlA6A1nV+ZY/GxxAETP+dThJHYEJZ7bGYvuOl6nLl8DyUyJNhgSis3dqfIYKKmSuYbrT/wjfb8XxabhqgORSRKasrUcwLm2Up4Ev76CSdjhY5b9HNsSROWYKBsxZKLqTJxvRAwA7hQ3wCHrNd5LH3yksi849rur4EWNd0z74afy0I40DcF92QOcVxmBR8EFi9TDVnqcsAy5+XKJ5WcpXNUkKGjReJz4VqGaTT0xdCoKztYR5x0q5OQi7CRpqkGaQD2FrEXBUYCvP0QY/LOWxDzhPspWvXI3Dh9aw6Di+XIS+8iMgslzzp5+W4c/MxDQa5lvXxsZJJwKnGU7SjVdzcdQ29lUmaDtoZUtCanGse9H8z4dCCV2c92FEegabhCittZZ8ah2rWE/8Oy0Wek8qDmTlR7Z1iksxX7ww6+JqI6RCs89+0r2axClyPin+Mj8caO1TIarR2fbi8T7+2UjXwI6yFO39YVG3vSHcvY7J1f3gy8iiwtvLlaY3ckwU/FfZX4K71mhE8fXeqmbHc=
 after_script:
-  - npm run-script coveralls
+- npm run-script coveralls
