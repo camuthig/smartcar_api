@@ -1,0 +1,29 @@
+{
+  "name": "smartcar_api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "node_modules/.bin/mocha tests/index.js",
+    "coverage": "`npm bin`/istanbul cover node_modules/.bin/_mocha tests/index.js",
+    "coveralls": "npm run-script coverage && node bin/coveralls.js < coverage/lcov.info"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "jade": "~1.11.0",
+    "lodash": "^4.11.1",
+    "morgan": "~1.6.1",
+    "request-json": "^0.5.5",
+    "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.9",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.4.5",
+    "should": "^8.3.1",
+    "supertest": "^1.2.0"
+  }
+}
