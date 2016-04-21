@@ -1,7 +1,6 @@
 var should = require('should'); 
 var assert = require('assert');
 var request = require('supertest');
-var _ = require('lodash');
 var app = require('../app');
 
 describe('Vehicles', function() {
