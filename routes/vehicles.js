@@ -46,7 +46,7 @@ var _handleResponse = function(err, response, body) {
 }
 
 /* GET vehicle details. 
-    /:id
+    /vehicles/:id
 
     {
       "vin": "1213231",
